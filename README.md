@@ -10,8 +10,9 @@ performance, using 211k trade-level records across 32 accounts (May 2023 – May
 ├── WRITEUP.md              <- 1-page methodology / insights / strategy summary
 ├── requirements.txt
 ├── data/
-│   ├── historical_data.csv       <- raw Hyperliquid trade data (provided)
-│   └── fear_greed_index.csv      <- raw BTC Fear & Greed Index (provided)
+│   ├── fear_greed_index.csv      <- raw BTC Fear & Greed Index (provided) 
+│   └── historical_data.csv       <- raw Hyperliquid trade data (Not provided)
+
 ├── notebook/
 │   └── analysis.ipynb            <- full analysis, executed with outputs/charts inline
 └── charts/
@@ -25,7 +26,13 @@ performance, using 211k trade-level records across 32 accounts (May 2023 – May
     ├── account_segments.csv          <- per-account summary + segment labels
     └── trader_clusters.csv           <- per-account cluster assignment (bonus)
 ```
-
+## Note on data
+Due to GitHub's file-size upload limits via the web interface, the raw `historical_data.csv`
+(~47MB) is not included directly in this repo. It is available on request, or can be re-fetched
+from the original assignment source. The smaller `fear_greed_index.csv`, along with all derived
+outputs (`charts/account_segments.csv`, `charts/trader_clusters.csv`, and the fully executed
+notebook with all charts/tables inline), are included so the analysis can be reviewed without
+needing to re-run it.
 ## How to run
 1. Create an environment and install dependencies:
    ```bash
